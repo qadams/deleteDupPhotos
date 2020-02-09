@@ -9,5 +9,8 @@ filenamePattern = '[a-zA-Z0-9]*([0-9]+)*.[a-zA-Z]*'
 files = os.listdir(searchRootDir)
 duplicateFiles = fnmatch.filter(files, filenamePattern)
 
-print(duplicateFile) for duplicateFile in duplicateFiles
+for duplicateFile in duplicateFiles:
+    print(duplicateFile)
+
+#print(duplicateFile) for duplicateFile in duplicateFiles
 #os.remove(duplicateFile) for duplicateFile in duplicateFiles
