@@ -12,3 +12,4 @@ for root, dirs, files in os.walk(searchRootDir, topdown=False):
         match = re.match(filenamePattern, fileX)
         if match:
             print(fileX)
+            os.remove(fileX)
